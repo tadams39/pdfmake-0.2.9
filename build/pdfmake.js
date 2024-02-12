@@ -69784,6 +69784,8 @@ var GPOSProcessor = /*#__PURE__*/function (_OTProcessor2) {
     this.glyphIterator.cur.markAttachment = baseGlyphIndex;
   };
   _proto28.getAnchor = function getAnchor(anchor) {
+    if (!anchor) return {x:0, y:0};
+
     // TODO: contour point, device tables
     var x = anchor.xCoordinate;
     var y = anchor.yCoordinate; // Adjustments for font variations
