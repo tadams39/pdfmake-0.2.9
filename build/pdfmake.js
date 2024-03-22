@@ -69784,7 +69784,7 @@ var GPOSProcessor = /*#__PURE__*/function (_OTProcessor2) {
     this.glyphIterator.cur.markAttachment = baseGlyphIndex;
   };
   _proto28.getAnchor = function getAnchor(anchor) {
-    if (!anchor) return {x:0, y:0};
+    if (!anchor) return {x:0, y:0}; // Note, running "npm run build" will remove this line because this is a compiled file
 
     // TODO: contour point, device tables
     var x = anchor.xCoordinate;
